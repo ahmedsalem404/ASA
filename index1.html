@@ -17,9 +17,41 @@
     <div class="head">
       
         <h1>WAVE</h1>
-       
+        <i class="fa-solid fa-bars" id="f" onclick="list()"></i>
+        <div class="the-list" id="t">
+          <div class="the-login">
+      
+            <div class="conetent">
+                
+                <h5>المهام</h5>
+                <h5>المخزن الاول</h5>
+                
+            </div>
+    
+            <div class="l"></div>
+    
+    
+           
+            <div class="icon">
+                
+                <i class="fa-solid fa-gear"></i>
+            </div>
+          
+    
+            <div class="names">
+                <span >مرحبا بك</span>
+                <span > احمد سالم</span>
+                
+            </div>
+            
+            <div class="icon2">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            
+          </div>
+        </div>
       <div class="the-login">
-
+      
         <div class="conetent">
             
             <h5>المهام</h5>
@@ -142,12 +174,35 @@
 </tr>
 
     </table>
+    <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 </div>
   <!-- the-mid -->
 
 
     
     <script src="bootstrap.bundle.min.js"></script>
+    <script>
+      function list(){
+document.getElementById('t').classList.add('show');
+
+}
+    </script>
   
   </body>
 </html>
