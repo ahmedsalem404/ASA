@@ -14,6 +14,7 @@ body{
     background: #F3F5F7;
 }
 // top-head
+
 .head{
 align-items: center;
 
@@ -21,6 +22,26 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 padding: 15px;
+.the-list.show{
+    top: 50%;
+    opacity: 1;
+    }
+
+.the-list{
+    z-index: 9;
+    position: absolute;
+    top: -100%;
+    left: 50%;;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 0, 0);
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translate(-50%,-50%);
+}
+.fa-bars{
+    display: none;
+}
 h1::first-letter{
     color: #6AABFF;
     padding-right: 5px;
@@ -35,6 +56,9 @@ h1{
     display: flex;
     margin-left: 100px;
     align-items: center;
+    .dropdown{
+        display: none;
+    }
     .icon{
      
 
@@ -333,7 +357,47 @@ margin-left: 200px;
         margin-right: 60px;
     }
 }
+
+
+
+
 @media  (max-width:600px) {
+    .head{
+.fa-bars{
+    display: block;
+    z-index: 99;
+    cursor: pointer;
+}
+
+       .the-login{
+        display: none;
+       
+       }
+       .the-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        .the-login{
+            display: flex;
+            flex-direction: column;
+            .conetent{
+                display: block;
+                h5{
+                    margin-top: 20px;
+                }
+               
+            }
+            .l{
+                display: none;
+            }
+            .icon{
+                margin: 20px 0;
+            }
+        }
+       }
+     
+    }
     
     .table{
         .top-tab{
@@ -373,112 +437,112 @@ margin-left: 200px;
     }
     
 }
-@media (max-width:305px) {
+// @media (max-width:305px) {
     
-    .head{
+//     .head{
         
-        h1{
-          font-size: 15px; 
-          margin-right: 1px;
+//         h1{
+//           font-size: 15px; 
+//           margin-right: 1px;
           
           
-        }
-        .the-login{
+//         }
+//         .the-login{
           
-            background: #4EDC65;
-            position: absolute;
+//             background: #4EDC65;
+//             position: absolute;
     
-            .icon{
-                margin-left: 15px;
-                margin-right: 15px;
-                .fa-gear{
-                    font-size: 5px;
-                    padding: 6px 7px;
-                }
-            }
+//             .icon{
+//                 margin-left: 15px;
+//                 margin-right: 15px;
+//                 .fa-gear{
+//                     font-size: 5px;
+//                     padding: 6px 7px;
+//                 }
+//             }
             
-          .names{
-            span:nth-child(1){
-                margin-bottom: 1px;
+//           .names{
+//             span:nth-child(1){
+//                 margin-bottom: 1px;
                 
-            }
-            span:nth-child(2){
-                font-size:1px;
-            }
-          }
-        }
-       .icon2{
-        .fa-solid{
-            font-size: 6px;
-            padding: 5px 9px;
-            margin-right: 9px ;
-        }
-       }
-    .l{
-        height: 50px;
-    }
-    .conetent{
-        h5{
-            margin-right: 25px;
-            font-size: 5px;
-        }
-    }
-    }
-    // top-head
-    .the-title{
-        margin-right: 0px;
-        h4{
-            font-size: 1px;
-        }
-        span{
-            font-size: 1px;
-        }
-    }
+//             }
+//             span:nth-child(2){
+//                 font-size:1px;
+//             }
+//           }
+//         }
+//        .icon2{
+//         .fa-solid{
+//             font-size: 6px;
+//             padding: 5px 9px;
+//             margin-right: 9px ;
+//         }
+//        }
+//     .l{
+//         height: 50px;
+//     }
+//     .conetent{
+//         h5{
+//             margin-right: 25px;
+//             font-size: 5px;
+//         }
+//     }
+//     }
+//     // top-head
+//     .the-title{
+//         margin-right: 0px;
+//         h4{
+//             font-size: 1px;
+//         }
+//         span{
+//             font-size: 1px;
+//         }
+//     }
     
     
-    // the-mid
-    .the-mid{
-        margin-top: 20px;
-     margin-left: 1px;
-     margin-right: 1px;
+//     // the-mid
+//     .the-mid{
+//         margin-top: 20px;
+//      margin-left: 1px;
+//      margin-right: 1px;
        
     
     
-        .table{
+//         .table{
           
-            .top-tab td{
+//             .top-tab td{
     
-                padding: 9px 5px ;
-                font-size: 10px;
-            }
-            .bot-tab th{
-                padding: 9px 5px;
-                font-size: 8px;
-                    }
-                    .bot-tab {
-                        i{
-                            margin-right: 40px;
-                            font-size: 9px;
-                        }
-                        i:nth-child(2){
-                            margin-right: 20px;
+//                 padding: 9px 5px ;
+//                 font-size: 10px;
+//             }
+//             .bot-tab th{
+//                 padding: 9px 5px;
+//                 font-size: 8px;
+//                     }
+//                     .bot-tab {
+//                         i{
+//                             margin-right: 40px;
+//                             font-size: 9px;
+//                         }
+//                         i:nth-child(2){
+//                             margin-right: 20px;
     
-                        }
+//                         }
                         
-                    }
-        }
-        .surch{
-            margin-bottom: 10px;
-            input{
-                padding: 3px 15px;
-                font-size: 8px ;
+//                     }
+//         }
+//         .surch{
+//             margin-bottom: 10px;
+//             input{
+//                 padding: 3px 15px;
+//                 font-size: 8px ;
                
-            }
-           .fa-magnifying-glass{
-            font-size: 4px ;
-            margin-right: 4px;
-           }
-        }
+//             }
+//            .fa-magnifying-glass{
+//             font-size: 4px ;
+//             margin-right: 4px;
+//            }
+//         }
     
-    }
-}
+//     }
+// }

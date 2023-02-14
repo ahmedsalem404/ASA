@@ -21,6 +21,25 @@ body {
   justify-content: space-between;
   padding: 15px;
 }
+.head .the-list.show {
+  top: 50%;
+  opacity: 1;
+}
+.head .the-list {
+  z-index: 9;
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 0, 0);
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translate(-50%, -50%);
+}
+.head .fa-bars {
+  display: none;
+}
 .head h1::first-letter {
   color: #6AABFF;
   padding-right: 5px;
@@ -35,6 +54,9 @@ body {
   display: flex;
   margin-left: 100px;
   align-items: center;
+}
+.head .the-login .dropdown {
+  display: none;
 }
 .head .the-login .icon {
   margin-left: 18px;
@@ -259,6 +281,36 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .head .fa-bars {
+    display: block;
+    z-index: 99;
+    cursor: pointer;
+  }
+  .head .the-login {
+    display: none;
+  }
+  .head .the-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .head .the-list .the-login {
+    display: flex;
+    flex-direction: column;
+  }
+  .head .the-list .the-login .conetent {
+    display: block;
+  }
+  .head .the-list .the-login .conetent h5 {
+    margin-top: 20px;
+  }
+  .head .the-list .the-login .l {
+    display: none;
+  }
+  .head .the-list .the-login .icon {
+    margin: 20px 0;
+  }
   .table .top-tab {
     display: none;
   }
@@ -289,81 +341,5 @@ body {
   }
   .table th::before {
     float: left;
-  }
-}
-@media (max-width: 305px) {
-  .head h1 {
-    font-size: 15px;
-    margin-right: 1px;
-  }
-  .head .the-login {
-    background: #4EDC65;
-    position: absolute;
-  }
-  .head .the-login .icon {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .head .the-login .icon .fa-gear {
-    font-size: 5px;
-    padding: 6px 7px;
-  }
-  .head .the-login .names span:nth-child(1) {
-    margin-bottom: 1px;
-  }
-  .head .the-login .names span:nth-child(2) {
-    font-size: 1px;
-  }
-  .head .icon2 .fa-solid {
-    font-size: 6px;
-    padding: 5px 9px;
-    margin-right: 9px;
-  }
-  .head .l {
-    height: 50px;
-  }
-  .head .conetent h5 {
-    margin-right: 25px;
-    font-size: 5px;
-  }
-  .the-title {
-    margin-right: 0px;
-  }
-  .the-title h4 {
-    font-size: 1px;
-  }
-  .the-title span {
-    font-size: 1px;
-  }
-  .the-mid {
-    margin-top: 20px;
-    margin-left: 1px;
-    margin-right: 1px;
-  }
-  .the-mid .table .top-tab td {
-    padding: 9px 5px;
-    font-size: 10px;
-  }
-  .the-mid .table .bot-tab th {
-    padding: 9px 5px;
-    font-size: 8px;
-  }
-  .the-mid .table .bot-tab i {
-    margin-right: 40px;
-    font-size: 9px;
-  }
-  .the-mid .table .bot-tab i:nth-child(2) {
-    margin-right: 20px;
-  }
-  .the-mid .surch {
-    margin-bottom: 10px;
-  }
-  .the-mid .surch input {
-    padding: 3px 15px;
-    font-size: 8px;
-  }
-  .the-mid .surch .fa-magnifying-glass {
-    font-size: 4px;
-    margin-right: 4px;
   }
 }/*# sourceMappingURL=index1.css.map */
