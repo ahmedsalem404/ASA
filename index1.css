@@ -347,14 +347,15 @@ body {
     font-size: 9px;
   }
   .the-mid .surch .fa-magnifying-glass {
-    font-size: 15px;
-    margin-top: 9px;
+    font-size: 16px;
+    margin-top: 8px;
     margin-right: 10px;
   }
   .table .top-tab {
     display: none;
   }
   .table .bot-tab i {
+    font-size: 14px !important;
     margin-left: 20px;
   }
   .table th {
