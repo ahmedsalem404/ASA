@@ -22,8 +22,10 @@
 
     <div class="head">
       <h1>WAVE</h1>
+      
       <i class="fa-solid fa-bars" id="f" onclick="list()"></i>
       <div class="the-list" id="t">
+        <i class="fa-regular fa-circle-xmark" id="clo"></i>
         <div class="the-login">
           <div class="conetent">
             <h5>المهام</h5>
@@ -31,7 +33,7 @@
           </div>
 
           <div class="l"></div>
-
+          <div class="the-list-mune">
           <div class="icon">
             <i class="fa-solid fa-gear"></i>
           </div>
@@ -44,6 +46,7 @@
           <div class="icon2">
             <i class="fa-solid fa-user"></i>
           </div>
+        </div>
         </div>
       </div>
       <div class="the-login">
@@ -152,19 +155,17 @@
             <i class="fa-regular fa-pen-to-square"></i>
           </th>
         </tr>
-        <tr class="bot-tab">
-          <th>1</th>
-          <th>سالم احمد</th>
-          <th>ساسوكي</th>
-          <th>2023/2/12</th>
-          <th>4</th>
-          <th>2</th>
-          <th>
-            200ريال<i class="fa-regular fa-trash-can"></i>
-            <i class="fa-regular fa-pen-to-square"></i>
-          </th>
-        </tr>
+        
       </table>
+
+
+
+
+
+
+
+
+      <!-- the 1, 2 ,3 -->
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">
@@ -182,6 +183,12 @@
           </li>
         </ul>
       </nav>
+
+
+      <!-- the 1, 2 ,3 -->
+
+
+
     </div>
     <!-- the-mid -->
 
@@ -190,6 +197,11 @@
       function list() {
         document.getElementById("t").classList.add("show");
       }
+      let clo=document.getElementById("clo");
+      clo.addEventListener("click",()=>{
+        document.getElementById("t").classList.remove("show");
+        
+      })
     </script>
   </body>
 </html>
