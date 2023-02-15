@@ -32,10 +32,19 @@ body {
   left: 50%;
   width: 100%;
   height: 100%;
-  background: rgb(255, 0, 0);
+  background: #F3F5F7;
   opacity: 0;
   transition: all 0.5s;
   transform: translate(-50%, -50%);
+}
+.head .the-list .fa-circle-xmark {
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  font-size: 30px;
+  z-index: 10;
 }
 .head .fa-bars {
   display: none;
@@ -116,8 +125,6 @@ body {
 
 .the-mid {
   margin-top: 70px;
-  margin-right: 200px;
-  margin-left: 200px;
 }
 .the-mid .table {
   background: white;
@@ -148,14 +155,13 @@ body {
   opacity: 80%;
 }
 .the-mid .table .bot-tab i {
-  position: absolute;
-  margin-right: 50px;
+  float: left;
   font-size: 16px;
   color: rgba(95, 96, 98, 0.662745098);
   cursor: pointer;
 }
 .the-mid .table .bot-tab i:nth-child(2) {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .the-mid .surch {
   margin-bottom: 20px;
@@ -232,8 +238,6 @@ body {
   }
   .the-mid {
     margin-top: 38px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
   .the-mid .table .top-tab td {
     padding: 9px 5px;
@@ -244,11 +248,7 @@ body {
     font-size: 8px;
   }
   .the-mid .table .bot-tab i {
-    margin-right: 40px;
     font-size: 9px;
-  }
-  .the-mid .table .bot-tab i:nth-child(2) {
-    margin-right: 20px;
   }
   .the-mid .surch {
     margin-bottom: 10px;
@@ -285,11 +285,14 @@ body {
     display: block;
     z-index: 99;
     cursor: pointer;
+    z-index: 1;
+    color: #4494FF;
   }
   .head .the-login {
     display: none;
   }
   .head .the-list {
+    z-index: 9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,6 +307,7 @@ body {
   }
   .head .the-list .the-login .conetent h5 {
     margin-top: 20px;
+    font-size: 20px;
   }
   .head .the-list .the-login .l {
     display: none;
@@ -311,8 +315,47 @@ body {
   .head .the-list .the-login .icon {
     margin: 20px 0;
   }
+  .head .the-list .the-login .the-list-mune {
+    display: flex;
+    align-items: center;
+  }
+  .head .the-list .the-login .the-list-mune .icon {
+    margin-left: 20px;
+  }
+  .head .the-list .the-login .the-list-mune .icon .fa-gear {
+    font-size: 20px;
+  }
+  .head .the-list .the-login .the-list-mune .names span:nth-child(1) {
+    font-size: 11px;
+  }
+  .head .the-list .the-login .the-list-mune .names span:nth-child(2) {
+    font-size: 15px;
+  }
+  .head .the-list .the-login .icon2 .fa-solid {
+    font-size: 20px;
+  }
+  .the-mid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .the-mid .surch {
+    margin-bottom: 10px;
+  }
+  .the-mid .surch input {
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 9px;
+  }
+  .the-mid .surch .fa-magnifying-glass {
+    font-size: 15px;
+    margin-top: 9px;
+    margin-right: 10px;
+  }
   .table .top-tab {
     display: none;
+  }
+  .table .bot-tab i {
+    margin-left: 20px;
   }
   .table th {
     display: block;
