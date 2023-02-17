@@ -29,7 +29,7 @@ padding: 15px;
 
 .the-list{
     z-index: 9;
-    position: absolute;
+    position: fixed;
     top: -100%;
     left: 50%;;
     width: 100%;
@@ -177,6 +177,7 @@ margin-top: 70px;
             padding: 14px 10px;
             font-size: 17px;
         }
+      
         
         .bot-tab th:nth-child(5){
             color: red;
@@ -475,8 +476,10 @@ margin-top: 70px;
             display: none;
          
         }
+       
         .bot-tab{
             i{
+                
                 font-size: 12px !important;
                 
                 margin-left: 20px;
@@ -492,6 +495,8 @@ margin-top: 70px;
         color: white;
 
        }
+     
+      
        th:nth-child(2)::before{
          content: "الاسم";
        }

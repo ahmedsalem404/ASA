@@ -27,7 +27,7 @@ body {
 }
 .head .the-list {
   z-index: 9;
-  position: absolute;
+  position: fixed;
   top: -100%;
   left: 50%;
   width: 100%;
