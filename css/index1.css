@@ -185,6 +185,13 @@ body {
   padding-right: 10px;
   border-right: 3px solid #5E73F8;
 }
+.the-mid .surch .fa-filter {
+  color: white;
+  background: #4494FF;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .the-mid .surch .fa-magnifying-glass {
   position: absolute;
   font-size: 20px;
@@ -342,13 +349,13 @@ body {
     margin-bottom: 10px;
   }
   .the-mid .surch input {
-    width: 100%;
+    width: 85%;
     padding: 10px 30px;
     font-size: 9px;
   }
   .the-mid .surch .fa-magnifying-glass {
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 13px;
     margin-right: 10px;
   }
   .table .top-tab {

@@ -218,6 +218,9 @@ margin-top: 70px;
     .surch{
         margin-bottom: 20px;
         
+       
+        
+        
         input{
             padding: 7px 40px ;
             border-radius: 20px;
@@ -231,6 +234,15 @@ margin-top: 70px;
             padding-right: 10px;
             border-right: 3px solid #5E73F8;
           
+        }
+        .fa-filter{
+            color: white;
+            background: #4494FF;
+            padding: 10px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            
+           
         }
         .fa-magnifying-glass{
             position: absolute;
@@ -473,13 +485,18 @@ margin-top: 70px;
         margin-bottom: 10px;
         
         input{
-            width: 100%;
+            width: 85%;
             padding: 10px 30px;
             font-size: 9px;
+        
+        }
+        .fa-filter{
+           
+            
         }
         .fa-magnifying-glass{
             font-size: 16px;
-            margin-top: 10px;
+            margin-top: 13px;
             margin-right: 10px;
         }
 
