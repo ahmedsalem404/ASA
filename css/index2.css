@@ -8,7 +8,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "myfont";
-  text-decoration: none !important;
 }
 
 body {
@@ -111,7 +110,6 @@ body {
   margin-right: 58px;
   cursor: pointer;
   transition: 0.5s;
-  color: black;
 }
 .head .conetent h5:hover {
   color: #5F6062;
@@ -126,7 +124,13 @@ body {
 }
 
 .the-mid {
-  margin-top: 70px;
+  margin-top: 50px;
+}
+.the-mid .btn-primary {
+  width: 200px;
+  margin-bottom: 10px;
+  background: #4494FF;
+  color: white;
 }
 .the-mid .table {
   background: white;
@@ -144,9 +148,6 @@ body {
 .the-mid .table .top-tab td {
   padding: 14px 10px;
   font-size: 17px;
-}
-.the-mid .table .bot-tab th:nth-child(5) {
-  color: red;
 }
 .the-mid .table .bot-tab th:nth-child(7) {
   color: #4EDC65;
@@ -167,6 +168,7 @@ body {
 }
 .the-mid .surch {
   margin-bottom: 20px;
+  align-items: center;
 }
 .the-mid .surch input {
   padding: 7px 40px;
@@ -197,7 +199,7 @@ body {
 .the-mid .surch .fa-magnifying-glass {
   position: absolute;
   font-size: 20px;
-  margin-top: 7px;
+  margin-top: 10px;
   margin-right: 15px;
   opacity: 50%;
 }
@@ -317,7 +319,6 @@ body {
   .head .the-list .the-login .conetent h5 {
     margin-top: 20px;
     font-size: 20px;
-    color: black;
   }
   .head .the-list .the-login .l {
     display: none;
@@ -396,4 +397,4 @@ body {
   .table th::before {
     float: left;
   }
-}/*# sourceMappingURL=index1.css.map */
+}/*# sourceMappingURL=index2.css.map */
